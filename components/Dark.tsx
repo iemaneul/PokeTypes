@@ -1,11 +1,5 @@
 import { Text, SafeAreaView, View, Image } from 'react-native';
-import darkCenter from '../assets/dark-center.png';
-import dark from '../assets/dark.png';
-import ghost from '../assets/ghost.png';
-import fairy from '../assets/fairy.png';
-import bug from '../assets/bug.png';
-import fighting from '../assets/fighting.png';
-import psychic from '../assets/psychic.png';
+import * as assets from '../assets';
 
 export default function Dark() {
   return (
@@ -47,14 +41,14 @@ export default function Dark() {
             }}
           >
             <Image 
-              source={bug} 
+              source={assets.bug} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={fairy} 
+              source={assets.fairy} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -62,7 +56,7 @@ export default function Dark() {
               }}
             />
             <Image 
-              source={fighting} 
+              source={assets.fighting} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -83,14 +77,14 @@ export default function Dark() {
             }}
           >
             <Image 
-              source={ghost} 
+              source={assets.ghost} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={psychic} 
+              source={assets.psychic} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -111,7 +105,7 @@ export default function Dark() {
               paddingHorizontal: 20,
             }}
           >
-            <Text style={{color: '#FFFFFF', textAlign: 'center', paddingTop: 10}}>
+            <Text style={{color: '#FFFFFF', textAlign: 'center', paddingTop: 5}}>
               Resistances
             </Text>
             <View 
@@ -122,14 +116,14 @@ export default function Dark() {
             }}
           >
             <Image 
-              source={ghost} 
+              source={assets.ghost} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={dark} 
+              source={assets.dark} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -137,7 +131,7 @@ export default function Dark() {
               }}
             />
             <Image 
-              source={psychic} 
+              source={assets.psychic} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -146,14 +140,15 @@ export default function Dark() {
           </View>
           </View>
           <Image 
-            source={darkCenter} 
-            style={{ 
-              width: 70, 
-              height: 70, 
+            source={assets.darkCenter} 
+            style={{
+              borderRadius: 200,
+              width: 60, 
+              height: 60, 
               position: 'absolute',
               marginTop: -5,
               left: '50%', 
-              transform: [{ translateX: -35 }]
+              transform: [{ translateX: -30 }]
             }}
           />
           

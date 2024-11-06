@@ -1,7 +1,7 @@
 import { Text, SafeAreaView, View, Image } from 'react-native';
 import * as assets from '../assets';
 
-export default function Eletric() {
+export default function Fairy() {
   return (
       <View style={{justifyContent: 'space-evenly', flex: 1, marginBottom: 90}}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly'}}>
@@ -36,12 +36,42 @@ export default function Eletric() {
               borderTopLeftRadius: 15, 
               alignItems: 'flex-start',
               flexDirection: 'row',
-              paddingHorizontal: 20,
+              paddingHorizontal: 15,
               paddingVertical: 20
             }}
           >
             <Image 
-              source={assets.ground} 
+              source={assets.bug } 
+              style={{ 
+                width: 20, 
+                height: 20, 
+              }}
+            />
+            <Image 
+              source={assets.fire} 
+              style={{ 
+                width: 20, 
+                height: 20,
+                marginHorizontal: 5
+              }}
+            />
+            <Image 
+              source={assets.flying} 
+              style={{ 
+                width: 20, 
+                height: 20, 
+              }}
+            />
+            <Image 
+              source={assets.ice} 
+              style={{ 
+                width: 20, 
+                height: 20,
+                marginHorizontal: 5
+              }}
+            />
+            <Image 
+              source={assets.poison} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -57,24 +87,30 @@ export default function Eletric() {
               justifyContent: 'flex-end', 
               alignItems: 'flex-end',
               flexDirection: 'row',
-              paddingHorizontal: 20,
+              paddingHorizontal: 15,
               paddingVertical: 20
             }}
           >
             <Image 
-              source={assets.flying} 
+              source={assets.ground} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={assets.water} 
+              source={assets.rock} 
               style={{ 
                 width: 20, 
                 height: 20,
-                marginLeft: 5
-
+                marginHorizontal: 5
+              }}
+            />
+            <Image 
+              source={assets.water} 
+              style={{ 
+                width: 20, 
+                height: 20, 
               }}
             />
           </View>
@@ -88,7 +124,7 @@ export default function Eletric() {
               borderBottomLeftRadius: 15, 
               borderBottomRightRadius: 15, 
               alignItems: 'center',
-              paddingHorizontal: 20,
+              paddingHorizontal: 15,
             }}
           >
             <Text style={{color: '#FFFFFF', textAlign: 'center', paddingTop: 5}}>
@@ -102,14 +138,14 @@ export default function Eletric() {
             }}
           >
             <Image 
-              source={assets.steel} 
+              source={assets.eletric} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={assets.eletric} 
+              source={assets.grass} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -117,18 +153,26 @@ export default function Eletric() {
               }}
             />
             <Image 
-              source={assets.flying} 
+              source={assets.ground} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
+            <Image 
+              source={assets.water} 
+              style={{ 
+                width: 20, 
+                height: 20,
+                marginLeft: 5, 
+              }}
+            />
           </View>
           </View>
           <Image 
-            source={assets.eletricCenter} 
-            style={{ 
-              borderRadius: 200,
+            source={assets.grassCenter} 
+            style={{
+              borderRadius: 200, 
               width: 60, 
               height: 60, 
               position: 'absolute',

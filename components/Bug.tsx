@@ -1,13 +1,5 @@
 import { Text, SafeAreaView, View, Image } from 'react-native';
-import bugCenter from '../assets/bug-center.png';
-import dark from '../assets/dark.png';
-import rock from '../assets/rock.png';
-import flying from '../assets/flying.png';
-import fire from '../assets/fire.png';
-import grass from '../assets/grass.png';
-import ground from '../assets/ground.png';
-import fighting from '../assets/fighting.png';
-import psychic from '../assets/psychic.png';
+import * as assets from '../assets';
 
 export default function Bug() {
   return (
@@ -49,14 +41,14 @@ export default function Bug() {
             }}
           >
             <Image 
-              source={rock} 
+              source={assets.rock} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={flying} 
+              source={assets.flying} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -64,7 +56,7 @@ export default function Bug() {
               }}
             />
             <Image 
-              source={fire} 
+              source={assets.fire} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -85,14 +77,14 @@ export default function Bug() {
             }}
           >
             <Image 
-              source={dark} 
+              source={assets.dark} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={grass} 
+              source={assets.grass} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -100,7 +92,7 @@ export default function Bug() {
               }}
             />
             <Image 
-              source={psychic} 
+              source={assets.psychic} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -120,7 +112,7 @@ export default function Bug() {
               paddingHorizontal: 20,
             }}
           >
-            <Text style={{color: '#FFFFFF', textAlign: 'center', paddingTop: 10}}>
+            <Text style={{color: '#FFFFFF', textAlign: 'center', paddingTop: 5}}>
               Resistances
             </Text>
             <View 
@@ -131,14 +123,14 @@ export default function Bug() {
             }}
           >
             <Image 
-              source={fighting} 
+              source={assets.fighting} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={grass} 
+              source={assets.grass} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -146,7 +138,7 @@ export default function Bug() {
               }}
             />
             <Image 
-              source={ground} 
+              source={assets.ground} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -155,14 +147,15 @@ export default function Bug() {
           </View>
           </View>
           <Image 
-            source={bugCenter} 
-            style={{ 
-              width: 70, 
-              height: 70, 
+            source={assets.bugCenter} 
+            style={{
+              borderRadius: 200,
+              width: 60, 
+              height: 60, 
               position: 'absolute',
               marginTop: -5,
               left: '50%', 
-              transform: [{ translateX: -35 }]
+              transform: [{ translateX: -30 }]
             }}
           />
           

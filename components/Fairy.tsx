@@ -1,12 +1,5 @@
 import { Text, SafeAreaView, View, Image } from 'react-native';
-import fairyCenter from '../assets/fairy-center.png';
-import ground from '../assets/ground.png';
-import poison from '../assets/poison.png';
-import steel from '../assets/steel.png';
-import dragon from '../assets/dragon.png';
-import fighting from '../assets/fighting.png';
-import grass from '../assets/grass.png';
-import dark from '../assets/dark.png';
+import * as assets from '../assets';
 
 export default function Fairy() {
   return (
@@ -48,14 +41,14 @@ export default function Fairy() {
             }}
           >
             <Image 
-              source={steel} 
+              source={assets.steel} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={poison} 
+              source={assets.poison} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -77,14 +70,14 @@ export default function Fairy() {
             }}
           >
             <Image 
-              source={dark} 
+              source={assets.dark} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={dragon} 
+              source={assets.dragon} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -92,7 +85,7 @@ export default function Fairy() {
               }}
             />
             <Image 
-              source={fighting} 
+              source={assets.fighting} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -112,7 +105,7 @@ export default function Fairy() {
               paddingHorizontal: 20,
             }}
           >
-            <Text style={{color: '#FFFFFF', textAlign: 'center', paddingTop: 10}}>
+            <Text style={{color: '#FFFFFF', textAlign: 'center', paddingTop: 5}}>
               Resistances
             </Text>
             <View 
@@ -123,14 +116,14 @@ export default function Fairy() {
             }}
           >
             <Image 
-              source={fighting} 
+              source={assets.bug} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={grass} 
+              source={assets.dark} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -138,23 +131,32 @@ export default function Fairy() {
               }}
             />
             <Image 
-              source={ground} 
+              source={assets.dragon} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
+            <Image 
+              source={assets.fighting} 
+              style={{ 
+                width: 20, 
+                height: 20,
+                marginLeft: 5
+              }}
+            />
           </View>
           </View>
           <Image 
-            source={fairyCenter} 
+            source={assets.fairyCenter} 
             style={{ 
-              width: 70, 
-              height: 70, 
+              borderRadius: 200,
+              width: 60, 
+              height: 60, 
               position: 'absolute',
               marginTop: -5,
               left: '50%', 
-              transform: [{ translateX: -35 }]
+              transform: [{ translateX: -30 }]
             }}
           />
           

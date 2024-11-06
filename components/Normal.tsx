@@ -1,7 +1,7 @@
 import { Text, SafeAreaView, View, Image } from 'react-native';
 import * as assets from '../assets';
 
-export default function Eletric() {
+export default function Bug() {
   return (
       <View style={{justifyContent: 'space-evenly', flex: 1, marginBottom: 90}}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly'}}>
@@ -41,7 +41,7 @@ export default function Eletric() {
             }}
           >
             <Image 
-              source={assets.ground} 
+              source={assets.fighting} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -61,22 +61,6 @@ export default function Eletric() {
               paddingVertical: 20
             }}
           >
-            <Image 
-              source={assets.flying} 
-              style={{ 
-                width: 20, 
-                height: 20, 
-              }}
-            />
-            <Image 
-              source={assets.water} 
-              style={{ 
-                width: 20, 
-                height: 20,
-                marginLeft: 5
-
-              }}
-            />
           </View>
           <View 
             style={{ 
@@ -95,39 +79,24 @@ export default function Eletric() {
               Resistances
             </Text>
             <View 
-            style={{ 
-              alignItems: 'flex-start',
-              flexDirection: 'row',
-              marginTop: 5
-            }}
-          >
-            <Image 
-              source={assets.steel} 
               style={{ 
-                width: 20, 
-                height: 20, 
+                alignItems: 'flex-start',
+                flexDirection: 'row',
+                marginTop: 5
               }}
-            />
-            <Image 
-              source={assets.eletric} 
-              style={{ 
-                width: 20, 
-                height: 20,
-                marginHorizontal: 5
-              }}
-            />
-            <Image 
-              source={assets.flying} 
-              style={{ 
-                width: 20, 
-                height: 20, 
-              }}
-            />
-          </View>
+            >
+              <Image 
+                source={assets.ghost} 
+                style={{ 
+                  width: 20, 
+                  height: 20, 
+                }}
+              />
+            </View>
           </View>
           <Image 
-            source={assets.eletricCenter} 
-            style={{ 
+            source={assets.normalCenter} 
+            style={{
               borderRadius: 200,
               width: 60, 
               height: 60, 

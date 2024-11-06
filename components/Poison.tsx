@@ -1,7 +1,7 @@
 import { Text, SafeAreaView, View, Image } from 'react-native';
 import * as assets from '../assets';
 
-export default function Eletric() {
+export default function Bug() {
   return (
       <View style={{justifyContent: 'space-evenly', flex: 1, marginBottom: 90}}>
         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly'}}>
@@ -47,6 +47,14 @@ export default function Eletric() {
                 height: 20, 
               }}
             />
+            <Image 
+              source={assets.psychic} 
+              style={{ 
+                width: 20, 
+                height: 20, 
+                marginLeft: 5,
+              }}
+            />
           </View>
           <View 
             style={{ 
@@ -62,19 +70,18 @@ export default function Eletric() {
             }}
           >
             <Image 
-              source={assets.flying} 
+              source={assets.fairy} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={assets.water} 
+              source={assets.grass} 
               style={{ 
                 width: 20, 
-                height: 20,
-                marginLeft: 5
-
+                height: 20, 
+                marginLeft: 5,
               }}
             />
           </View>
@@ -102,14 +109,14 @@ export default function Eletric() {
             }}
           >
             <Image 
-              source={assets.steel} 
+              source={assets.bug} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={assets.eletric} 
+              source={assets.fairy} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -117,7 +124,22 @@ export default function Eletric() {
               }}
             />
             <Image 
-              source={assets.flying} 
+              source={assets.fighting} 
+              style={{ 
+                width: 20, 
+                height: 20, 
+              }}
+            />
+            <Image 
+              source={assets.grass} 
+              style={{ 
+                width: 20, 
+                height: 20,
+                marginHorizontal: 5
+              }}
+            />
+            <Image 
+              source={assets.poison} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -126,8 +148,8 @@ export default function Eletric() {
           </View>
           </View>
           <Image 
-            source={assets.eletricCenter} 
-            style={{ 
+            source={assets.poisonCenter} 
+            style={{
               borderRadius: 200,
               width: 60, 
               height: 60, 

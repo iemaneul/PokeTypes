@@ -1,12 +1,5 @@
 import { Text, SafeAreaView, View, Image } from 'react-native';
-import dragonCenter from '../assets/dragon-center.png';
-import ice from '../assets/ice.png';
-import dragon from '../assets/dragon.png';
-import fairy from '../assets/fairy.png';
-import fire from '../assets/fire.png';
-import grass from '../assets/grass.png';
-import eletric from '../assets/eletric.png';
-import water from '../assets/water.png';
+import * as assets from '../assets';
 
 export default function Dragon() {
   return (
@@ -48,14 +41,14 @@ export default function Dragon() {
             }}
           >
             <Image 
-              source={dragon} 
+              source={assets.dragon} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={fairy} 
+              source={assets.fairy} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -63,7 +56,7 @@ export default function Dragon() {
               }}
             />
             <Image 
-              source={ice} 
+              source={assets.ice} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -84,7 +77,7 @@ export default function Dragon() {
             }}
           >
             <Image 
-              source={dragon} 
+              source={assets.dragon} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -104,7 +97,7 @@ export default function Dragon() {
               paddingHorizontal: 20,
             }}
           >
-            <Text style={{color: '#FFFFFF', textAlign: 'center', paddingTop: 10}}>
+            <Text style={{color: '#FFFFFF', textAlign: 'center', paddingTop: 5}}>
               Resistances
             </Text>
             <View 
@@ -115,14 +108,14 @@ export default function Dragon() {
             }}
           >
             <Image 
-              source={water} 
+              source={assets.water} 
               style={{ 
                 width: 20, 
                 height: 20, 
               }}
             />
             <Image 
-              source={eletric} 
+              source={assets.eletric} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -130,7 +123,7 @@ export default function Dragon() {
               }}
             />
             <Image 
-              source={grass} 
+              source={assets.grass} 
               style={{ 
                 width: 20, 
                 height: 20,
@@ -138,7 +131,7 @@ export default function Dragon() {
               }}
             />
             <Image 
-              source={fire} 
+              source={assets.fire} 
               style={{ 
                 width: 20, 
                 height: 20, 
@@ -147,14 +140,15 @@ export default function Dragon() {
           </View>
           </View>
           <Image 
-            source={dragonCenter} 
+            source={assets.dragonCenter} 
             style={{ 
-              width: 70, 
-              height: 70, 
+              borderRadius: 200,
+              width: 60, 
+              height: 60, 
               position: 'absolute',
               marginTop: -5,
               left: '50%', 
-              transform: [{ translateX: -35 }]
+              transform: [{ translateX: -30 }]
             }}
           />
           
