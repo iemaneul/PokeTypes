@@ -1,11 +1,14 @@
-# Sample Snack app
+PokeTypes
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Sometimes, playing Pokémon, we are faced with the dilemma: will my attack on that Pokémon work? Will I do a lot of damage?
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+For this, there are tables on the internet, showing which moves are weak, strong or don't work on certain Pokémon.
+Therefore, while studying React Native, I developed a tool that shows these types' weaknesses, resistances and strengths, against other types.
+However, of course, with a cleaner screen, without much information when you look at it, with a nice, robust design and paying attention to what really matters. In this case, the effectiveness of each type of blow on each type of Pokémon.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+It is worth remembering that there is a hill below with immunities. I preferred to separate them, as the layout could be very cluttered.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+I used this Deviantart to  get all the assets: https://www.deviantart.com/jormxdos/gallery/88740781/pokemon-type-symbols-paldea
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+And, if you don't how to compile a project on your computer, there's no problem! You can see the project live on this website: https://snack.expo.dev/@emanuelcosta11/github.com-iemaneul-poketypes?platform=ios
+You just need to click on 'Launch Snack', wait the queue for your time, and click on 'Open' on 'Open in "Expo Go"?' box. And the project is live for you to see! =)
