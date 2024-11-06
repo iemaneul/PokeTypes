@@ -12,3 +12,9 @@ I used this Deviantart to  get all the assets: https://www.deviantart.com/jormxd
 
 And, if you don't how to compile a project on your computer, there's no problem! You can see the project live on this website: https://snack.expo.dev/@emanuelcosta11/github.com-iemaneul-poketypes?platform=ios
 You just need to click on 'Launch Snack', wait the queue for your time, and click on 'Open' on 'Open in "Expo Go"?' box. And the project is live for you to see! =)
+
+![image-poketypes](https://github.com/user-attachments/assets/9a852b3a-77df-496b-836e-40fe73bd7243)
+https://github.com/user-attachments/assets/917d06b8-3bc3-48c6-8f08-8825553aa111
+
+
+
